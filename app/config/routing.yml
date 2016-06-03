@@ -1,0 +1,24 @@
+contact_retrieve_all:
+    path:      /contact
+    defaults:  { _controller: ContactsBundle:Default:retrieveAll }
+    methods:  [GET]
+
+contact_show:
+    path:      /contact/{contactId}
+    defaults:  { _controller: ContactsBundle:Default:show }
+    methods:  [GET]
+
+contact_create:
+    path:      /contact
+    defaults:  { _controller: ContactsBundle:Default:create }
+    methods:  [POST]
+
+contact_edit:
+    path:      /contact/{contactId}
+    defaults:  { _controller: ContactsBundle:Default:edit }
+    methods:  [PUT]
+
+contact_delete:
+    path:      /contact/{contactId}
+    defaults:  { _controller: ContactsBundle:Default:delete }
+    methods:  [DELETE]
